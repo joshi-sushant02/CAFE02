@@ -1,0 +1,349 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<title>CAFE REMINISCENCE</title>
+<link rel="stylesheet" href="menu.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<style>
+  .middle{
+  /* position: absolute; */
+  top: 30%;
+  width: 100%;
+  text-align: center;
+}
+.btn{
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #3498db;
+  overflow: hidden;
+  position: relative;
+}
+.btn i{
+  line-height: 90px;
+  font-size: 26px;
+  transition: 0.2s linear;
+}
+.btn:hover i{
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+.btn:hover  {
+transform: scale(1.1);}
+
+.btn::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+.btn:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@keyframes aaa {
+  0%{
+    left: -110%;
+    top: 90%;
+  }50%{
+    left: 10%;
+    top: -30%;
+  }100%{
+    top: -10%;
+    left: -10%;
+  }
+}
+
+.first{
+    background-color: #f1f1f1;
+   border-radius:30px;
+    width: 90px;
+    height: 90px;
+    position: relative;
+ 
+    animation-name: animation1;
+    animation-duration:0.5s;
+    animation-delay:0.1s;
+    animation-iteration-count: 1;
+}
+@keyframes animation1 {
+ 0%{
+ top:-200px;
+ left:0px;
+ }
+ 100%{
+ top: 0px;
+ left: 0px;
+ }
+ }
+.side{
+    background-color: #f1f1f1;
+   border-radius:30px;
+    width: 90px;
+    height: 90px;
+    position: relative;
+ 
+    animation-name: animation2;
+    animation-duration:0.5s;
+    animation-delay:0.1s;
+    animation-iteration-count: 1;
+    }
+@keyframes animation2{
+ 0%{
+ top:200px;
+ left:0px;
+ }
+
+ 
+ 
+ 100%{
+ top: 0px;
+ left: 0px;
+ }
+ }
+</style>
+<body>
+
+
+
+<header class="bgimg" id="home">
+  <div class="ope">
+   
+  </div>
+  <div class="seemenu"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p><a href="#menu" class="seemenuin">Let me see the menu</a></p>
+  </div>
+</header>
+
+
+<div class="mmenu" id="menu">
+  <div class="mmenuin">
+  
+    <h1 style="font-size: 64px;margin-top: 50px ; margin-bottom:64px; width: auto; text-align: center;">THE MENU</h1>
+    <div class="menutab">
+      <a onclick="menu(event, 'Pizza');" style="cursor: pointer;"  id="myLink">
+        <div class="menulist tablinks">Pizza</div>
+      </a>
+      <a onclick="menu(event, 'Sandwich');" style="cursor: pointer;" >
+        <div class="menulist tablinks">Sandwich</div>
+      </a>
+      <a onclick="menu(event, 'Shakes');" style="cursor: pointer;" >
+        <div class="menulist tablinks">Shakes</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="menucat menu">
+      
+      <h1><b>Margherita</b> <span class="menuitemprice">79</span></h1>
+            <p class="grey">Fresh tomatoes, fresh mozzarella, fresh basil</p> 
+            <hr>
+               
+            <h1><b>Formaggio</b> <span class="menuitemprice">89</span></h1>
+            <p class="grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+            <hr>
+
+            <h1><b>Golden Corn</b> <span class="menuitemprice">99</span></h1>
+            <p class="grey">Fresh tomatoes, fresh cheese, fresh corns</p> 
+            <hr>
+               
+            <h1><b>Corn Cheese</b> <span class="menuitemprice">99</span></h1>
+            <p class="grey">Fresh tomatoes, fresh mozzarella, fresh corns</p>
+            <hr>
+
+            <h1><b>Mumbaiya Pizza</b> <span class="menuitemprice">109</span></h1>
+            <p class="grey">Fresh tomatoes, Sp. Mumbai Masala, fresh capsicum, cheese</p> 
+            <hr>
+               
+            <h1><b>Indori Pizza</b> <span class="menuitemprice">119</span></h1>
+            <p class="grey">Fresh Tomatoes, Sp. Indori Masala,Fresh onions,cheese</p>
+            <hr>
+
+            <h1><b>Lakhnavi Nawabi Pizza</b> <span class="menuitemprice">129</span></h1>
+            <p class="grey">(Fresh Tomatoes, Sp. Lakhnavi Masala,Fresh Mozzarella)</p> 
+            <hr>
+               
+            <h1><b>Makhni Pizza</b> <span class="menuitemprice">129</span></h1>
+            <p class="grey">(Sp. Magic masala, Italian Pizza sauce, Fresh onions and Cheese)</p>
+            <hr>
+
+            <h1><b>Amritsari Pizza</b> <span class="menuitemprice">129</span></h1>
+            <p class="grey">(Sp. Amritsari masala, Jalapenos, Capsicum,Fresh pecorino)</p> 
+            <hr>
+               
+            <h1><b>Chinese Pizza</b> <span class="menuitemprice">129</span></h1>
+            <p class="grey">(Chinese noodles and manchurian,Fresh pecorino,Fresh tomatoes )</p>
+            <hr>
+
+            <h1><b>Exotic Paradise </b> <span class="menuitemprice">159</span></h1>
+            <p class="grey">/9Fresh tomatoes, fresh mozzarella, fresh basil, Exotic sauce, Fresh pecorino)</p> 
+            <hr>
+               
+            <h1><b>Tandoori Paneer</b> <span class="menuitemprice">159</span></h1>
+            <p class="grey">(Fried Paneer, Fresh Tomatoes, Capsicum, Onions,Mozzarello,pecorino)</p>
+            <hr>
+
+            <h1><b>Maharaja Paneer</b> <span class="menuitemprice">149</span></h1>
+            <p class="grey">(Big Paneer pieces, mozarello, Tomatoes, Basil, jalapenos, jarlsberg)</p> 
+        
+    </div>
+
+    <div id="Sandwich" class="menucat menu">
+      <h1><b>Masala Sandwich</b> <span class="menuitemprice">49</span></h1>
+            <p class="grey">(Tomatoe slices, Capsicum pieces, cheese)</p>
+            <hr>
+
+            <h1><b>Pasta Sandwich</b> <span class="menuitemprice">59</span></h1>
+            <p class="grey">(Cheese Pasta, whole wheat bread, Tomatoe slices)</p> 
+            <hr>
+               
+            <h1><b>Maggi Sandwich</b> <span class="menuitemprice">59</span></h1>
+            <p class="grey">(Masala maggi, Cheese)</p>
+            <hr>
+
+            <h1><b>Veggie Sandwich</b> <span class="menuitemprice">59</span></h1>
+            <p class="grey">(Cabbage, Tomatoes, Oniones, Capsicum, Mayonnaise)</p> 
+            <hr>
+             
+            <h1><b>Rich Creamy Sandwich</b> <span class="menuitemprice">59</span></h1>
+            <p class="grey">(Salads, Fresh Cream, Cheese)</p>
+            <hr>
+
+            <h1><b>Indori Masala Sandwich</b> <span class="menuitemprice">59</span></h1>
+            <p class="grey">(Sp. Indori Masala, Tomatoes, Cheese)</p> 
+            <hr>
+               
+            <h1><b>Club Masala Sandwich</b> <span class="menuitemprice">79</span></h1>
+            <p class="grey">(Sp. Masala, Whole wheat bread, Mayonnaise)</p>
+            <hr>
+
+            <h1><b>Club Veggie Sandwich</b> <span class="menuitemprice">79</span></h1>
+            <p class="grey">(Salads, Whole wheat Bread,Mayonnaise, Sp. masala)</p> 
+            <hr>
+               
+            <h1><b>Club Rich Creamy Sandwich</b> <span class="menuitemprice">89</span></h1>
+            <p class="grey">(Salads, Whole wheat Bread,Mayonnaise, Sp. masala, Fresh cream)</p>
+            <hr>
+
+            <h1><b>Veg Kababi Sandwich </b> <span class="menuitemprice">89</span></h1>
+            <p class="grey">(Kababs, Cheese, Salads, Mayonnaise)</p> 
+            <hr>
+               
+            <h1><b>Paneer Tikka Sandwich</b> <span class="menuitemprice">99</span></h1>
+            <p class="grey">(Paneer Pieces, Magic masala, Cheese, Mayonnaise, Tomatoes, Capsicum)</p>
+            <hr>
+    </div>
+
+
+    <div id="Shakes" class="menucat menu">
+      <h1><b>Paan Shake</b> <span class="menuitemprice">69</span></h1>
+            <hr>
+
+            <h1><b>Saffron Shake</b> <span class="menuitemprice">69</span></h1>
+            <hr>
+               
+            <h1><b>Chocolate Shake</b> <span class="menuitemprice">64</span></h1>
+            <hr>
+
+            <h1><b>Strawberry Shake</b> <span class="menuitemprice">64</span></h1>
+            <hr>
+               
+            <h1><b>Kit-kat Shake</b> <span class="menuitemprice">64</span></h1>
+            <hr>
+
+            <h1><b>Oreo Shake</b> <span class="menuitemprice">64</span></h1>
+            <hr>
+
+            <h1><b>Dark Chocolate Shake</b> <span class="menuitemprice">79</span></h1>
+            <hr>
+    </div><br>
+
+  </div>
+</div>
+
+
+<div class="mabout" id="about">
+  <div style="margin-top: 50px; margin-left:auto;margin-right:auto;max-width:980px">
+    <h1 style="font-size: 64px; margin-bottom:64px; width: auto; text-align: center;">About</h1>
+    <p>Cafe Reminiscence is here to kill your boredom , to have some fun by having some food and drinks with some music!
+</p>
+    
+    <p>WELCOME.</p>
+    <img src="cafe1.jpg"
+     style="width:100%" class="resimg" alt="Cafe Reminiscence">
+   <h1>REFER AND EARN
+
+    
+    Get yourself 40 % discount by getting in 2 more customers</h1>
+    </div>
+    
+  </div>
+</div>
+
+<div class="mcontact" id="contact">
+  <div style="padding: 16px; margin-left:auto;margin-right:auto;max-width:990px;">
+    <h1 style="font-size: 64px; margin-bottom:64px; width: auto; text-align: center;">Contact</h1>
+    <p>Call us at 7631011495</p>
+    
+    <p style="font-size: 36px;"><strong>Reserve</strong> A table, ask for today's special or just send us a message:</p>
+    <form action="menu.php" method="POST" target="_blank">
+      <p><input class="inp" type="text" placeholder="Name"  name="Name" required></p>
+      <p><input class="inp" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="inp" type="date" placeholder="Date" required name="d-m-Y" value="2019-01-24T20:00"></p>
+      <p><select class="inp"  id="cars" name="order">
+        <option value="Corn Cheese">Corn Cheese</option>
+        <option value="Chinese Pizza">Chinese Pizza</option>
+        <option value="Mumbaiya Pizza">Mumbaiya Pizza</option>
+        <option value="Maharaja Paneer">Maharaja Paneer</option>
+        <option value="Masala Sandwich">Masala Sandwich</option>
+        <option value="Veggie Sandwich">Veggie Sandwich</option>
+        <option value="Maharaja Paneer">Pasta Sandwich</option>
+        <option value="Maharaja Paneer">Oreo Shake</option>
+        <option value="Maharaja Paneer">Chocolate Shake</option>
+        <option value="Maharaja Paneer">Dark Chocolate Shake</option>
+      </select></p>
+      <p><button class="button" type="submit">SEND MESSAGE</button></p>
+    </form>
+    <div class="middle">
+      <a class=" btn side " href="#">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a class=" btn first" href="#">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="btn side" href="#">
+        <i class="fab fa-google"></i>
+      </a>
+      <a class="btn first" href="#">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a class="btn first" href="#">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>  
+  </div>
+</div>
+
+
+<footer>
+  <p>Created By -</p>
+  <p>chinmay anand<br>    Riya kohok<br> Harshvardhan<br>  Mihir joshi<br>   Sushant  joshi<br></p>
+</footer>
+<script>
+document.getElementById("myLink").click();
+</script>
+<script src="menu.js"></script>
+</body>
+</html>
