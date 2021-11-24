@@ -1,0 +1,60 @@
+start xampp server
+go to localhost/dashboard
+go to ->my php admin 
+go to sql query secction and copy all the following code as it is
+
+
+
+
+
+
+CREATE DATABASE cafe_db;
+CREATE TABLE IF NOT EXISTS `login_info2` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ 
+ `email_2` varchar(50) NOT NULL,
+ `password2` varchar(50) NOT NULL,
+ 
+ PRIMARY KEY (`id`)
+);
+
+CREATE TABLE IF NOT EXISTS `order1` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `username` varchar(50) NOT NULL,
+ `peoples` int(50) NOT NULL,
+ `orderr` varchar(50) NOT NULL,
+ `date` date NOT NULL,
+  PRIMARY KEY (`id`)
+);
+CREATE TABLE IF NOT EXISTS `users` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `username` varchar(50) NOT NULL,
+ `email` varchar(50) NOT NULL,
+ `password` varchar(50) NOT NULL,
+ `mobile_number` int(50) NOT NULL,
+ PRIMARY KEY (`id`)
+);
+CREATE TABLE IF NOT EXISTS `subcribe`(
+ `username` varchar(50) NOT NULL,
+ `email` varchar(50) NOT NULL,
+ `addr` varchar(50) NOT NULL,
+ `subscription` varchar(50) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS `bill`(
+`food` varchar(20) NOT NULL,
+ `prise` int(20) NOT NULL,);
+
+
+
+INSERT INTO bill (food,prise) VALUES ("Corn Cheese",99);
+INSERT INTO bill (food,prise) VALUES ("Chinese Pizza",129);
+INSERT INTO bill (food,prise) VALUES ("Oreo Shake",64);
+INSERT INTO bill (food,prise) VALUES ("Pasta Sandwich",59);
+INSERT INTO bill (food,prise) VALUES ("Veggie Sandwich",59);
+INSERT INTO bill (food,prise) VALUES ("Masala Sandwich",49);
+INSERT INTO bill (food,prise) VALUES ("Maharaja Paneer",149);
+INSERT INTO bill (food,prise) VALUES ("Mumbaiya Pizza",109);
+INSERT INTO bill (food,prise) VALUES ("Dark Chocolate Shake",79);
+INSERT INTO bill (food,prise) VALUES ("Chocolate Shake",64);
+
